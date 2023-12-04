@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background-color: #111111;
+  color: #FFFFFF;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button,
+input {
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+button:focus {
+  border: 0;
+}
+
+input:focus {
+  border: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #111111;
+  border-radius: 8px;
+}
+
+
+.typerwriter::after {
+  content: '|';
+  margin-left: 8px;
+  opacity: 1;
+  animation: blink 1s infinite;
+  color: #111111;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
