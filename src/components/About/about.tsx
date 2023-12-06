@@ -32,7 +32,7 @@ export default function About() {
               <ul>
                 <a
                   href="#"
-                  rel="noonpener"
+                  rel="noopener"
                   target="_blank"
                 >
                   <li>
@@ -92,5 +92,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }

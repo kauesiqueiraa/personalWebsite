@@ -1,0 +1,171 @@
+.projects {
+  padding: var(--gap-8) var(--gap-5);
+  text-align: center;
+  background-color: var(--bg-main);
+}
+
+.projects .container h2 {
+  padding-bottom: var(--gap-3);
+  color: var(--color-white);
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.projects .container h2 span {
+  color: var(--color-main);
+}
+
+.projects .container #projects {
+  margin: var(--gap-3) 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.projects .container #projects .teslabank {
+  border: 1px solid var(--color-red);
+}
+
+.projects .container #projects .teslabank:hover {
+  border: 1px solid var(--color-red);
+}
+
+.projects .container #projects .naped {
+  border: 1px solid var(--color-blue);
+}
+
+.projects .container #projects .naped:hover {
+  border: 1px solid var(--color-blue);
+}
+
+.projects .container #projects .efront {
+  border: 1px solid var(--color-green);
+}
+
+.projects .container #projects .efront:hover {
+  border: 1px solid var(--color-green);
+}
+
+.projects .container #projects .steam {
+  border: 1px solid var(--color-purple);
+}
+
+.projects .container #projects .steam:hover {
+  border: 1px solid var(--color-purple);
+}
+
+.projects .container #projects article {
+  height: auto;
+  padding: var(--gap-4);
+  margin: var(--gap-1);
+  flex-basis: calc(33% - 20px);
+  flex-grow: 1;
+  border: 1px solid var(--bg-main);
+  transition: 1s all ease;
+  background-color: var(--bg-secondary);
+  height: auto;
+}
+
+.projects .container #projects article:hover {
+  border: 1px solid var(--color-purple);
+}
+
+.projects .container #projects article h3 {
+  color: var(--color-white);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.projects .container #projects article p {
+  line-height: var(--gap-3);
+  margin: var(--gap-3) var(--gap-0);
+  color: var(--color-gray);
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+}
+
+.projects .container #projects #teslabank {
+  color: var(--color-red);
+}
+
+.projects .container #projects #teslabank::after {
+  background: linear-gradient(270deg, var(--color-red) 0%, #17161d 100%);
+}
+
+.projects .container #projects #naped {
+  color: var(--color-blue);
+}
+
+.projects .container #projects #naped::after {
+  background: linear-gradient(270deg, var(--color-blue) 0%, #17161d 100%);
+}
+
+.projects .container #projects #efront {
+  color: var(--color-green);
+}
+
+.projects .container #projects #efront::after {
+  background: linear-gradient(270deg, var(--color-green) 0%, #17161d 100%);
+}
+
+.projects .container #projects #steam {
+  color: var(--color-purple);
+}
+
+.projects .container #projects #steam::after {
+  background: linear-gradient(270deg, var(--color-purple) 0%, #17161d 100%);
+}
+
+.projects .container #projects a,
+.projects .container a {
+  color: var(--color-main);
+  position: relative;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.projects .container #projects a::after,
+.projects .container a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -7px;
+  left: 0;
+  background: linear-gradient(270deg, var(--color-purple) 0%, #17161d 100%);
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.projects .container #projects a:hover::after,
+.projects .container a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+/* Responsive-Desktop  */
+@media screen and (max-width: 1200px) {
+  .projects .container #projects article {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+
+/* Responsive-Tablet */
+@media screen and (max-width: 992px) {
+  .projects {
+    padding: var(--gap-5) var(--gap-3);
+  }
+}
+
+/* Responsive-Mobile */
+@media screen and (max-width: 768px) {
+  .projects .container #projects article {
+    flex-basis: calc(100% - 20px);
+  }
+}

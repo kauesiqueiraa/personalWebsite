@@ -51,7 +51,7 @@
 }
 
 .container .home .home-container-text h1 span {
-  color: #111111;
+  color: var(--color-main);
 }
 
 .container .home .home-container-text p {

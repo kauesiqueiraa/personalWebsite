@@ -1,8 +1,7 @@
 import './App.css'
+import Footer from './components/Footer/footer';
 import Menu from './components/Menu/menu'
 import Home from './pages/home';
-
-import styles from "./styles/style.module.scss";
 
 function App() {
 
@@ -10,6 +9,7 @@ function App() {
     <div>
       <Menu />
       <Home />
+      <Footer />
     </div>
   )
 }
