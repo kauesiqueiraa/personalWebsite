@@ -1,6 +1,6 @@
 header {
   padding: 0px 50px;
-  background-color: #111111;
+  background-color: var(--bg-main);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid #101013;
@@ -46,13 +46,13 @@ header .grid_layout .nav_list {
 }
 
 .nav_list a {
-  color: #9ca3af;
+  color: var(--color-gray);
   position: relative;
   font-size: 1.8rem;
 }
 
 .nav_list a:hover {
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .nav_list a::after {
@@ -63,7 +63,7 @@ header .grid_layout .nav_list {
   height: 1px;
   bottom: -7px;
   left: 0;
-  background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
+  background: linear-gradient(270deg, var(--color-main) 0%, #17161d 100%);
   transform-origin: bottom right;
   transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -82,7 +82,7 @@ header .grid_layout .nav_list {
 .mobile_menu div {
   width: 32px;
   height: 1px;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   margin: 8px;
   transition: 0.4s;
 }
@@ -130,7 +130,7 @@ nav_list:active {
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    background-color: #151515;
+    background-color: var(--bg-secondary);
     flex-direction: column;
     padding-top: 96px;
     visibility: hidden;

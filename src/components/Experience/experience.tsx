@@ -1,6 +1,28 @@
+// import { useState } from "react";
 import "./Experience.css";
 
-export default function Experience() {
+export default function Experience(
+  // changeDescription,
+  // titleExperience,
+  // companyExperience,
+  // dateExperience,
+) {
+  // const [currentExperience, setCurrentExperience] = useState({
+  //   changeDescription: '',
+  //   titleExperience: '',
+  //   companyExperience: '',
+  //   dateExperience: '',
+  // });
+
+  // const handleExperienceClick = () => {
+  //   setCurrentExperience({
+  //     changeDescription,
+  //     titleExperience,
+  //     companyExperience,
+  //     dateExperience,
+  //   })
+  // }
+
   return (
     <section className="experience">
       <div className="container">
@@ -9,6 +31,7 @@ export default function Experience() {
           <div
             className="option-experience intervalCardReveal"
             id="experience-company"
+          // onClick={handleExperienceClick()}
           >
             <div className="company digitalhouse activeExperience">
               <h3>Digital House</h3>

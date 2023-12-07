@@ -1,7 +1,19 @@
 import "./StartHome.css";
 import logo from "../../assets/logo.svg"
+import typeWrite from "../TyperWrite/typeWrite";
+import { useEffect, useRef } from "react";
+import initScrollReveal from "../ScrollReveal/scrollReveal";
 
 export default function StartHome() {
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    if (elementRef.current) {
+      typeWrite({ element: elementRef.current });
+      initScrollReveal();
+    }
+  })
+
   return (
     <section className="start-Home">
       <div className="container">
@@ -10,7 +22,7 @@ export default function StartHome() {
             <h1 className="delayMediumReveal">
               Ajudando empresas a contruírem <span>produtos digitais</span> de forma moderna e de alta qualidade.
             </h1>
-            <p className="typewriter">
+            <p ref={elementRef}>
               Uma mistura de Design, Desenvolvimento Frontend e habilidade profissional que vão destacar seu produto no mercado.
             </p>
 

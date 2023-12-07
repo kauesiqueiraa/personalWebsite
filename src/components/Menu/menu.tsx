@@ -1,5 +1,5 @@
 import "./Menu.css";
-import logo from "../../assets/logo-iuricode.svg"
+import logo from "../../assets/logo-kauesiqueira.svg";
 import { useEffect, useState } from "react";
 
 export default function Menu() {
@@ -36,7 +36,7 @@ export default function Menu() {
     <header className="">
       <div className="grid_layout">
         <nav>
-          <img src={logo} alt="Logo" width="150px" height="25px" />
+          <img src={logo} alt="Logo" width="250px" height="35px" />
 
           <div className={`mobile_menu ${isMenuOpen ? "active" : ""}`} >
             <div>line1</div>

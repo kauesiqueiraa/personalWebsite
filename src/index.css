@@ -10,7 +10,8 @@
 }
 
 :root {
-  --color-main: #986dff;
+  /* --color-main: #986dff; */
+  --color-main: #f88f06;
   --color-white: #FFFFFF;
   --color-gray: #9CA3AF;
   --color-red: #E51D37;

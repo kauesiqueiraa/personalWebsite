@@ -17,8 +17,8 @@ export default function About() {
           </div>
           <div>
             <h4 className="delayMediumReveal">Quem sou</h4>
-            <h2 className="delaySmallReveal">Iuri Silva</h2>
-            <h3 className="delayMediumReveal">Frontend Developer & UI Designer</h3>
+            <h2 className="delaySmallReveal">Kauê Siqueira</h2>
+            <h3 className="delayMediumReveal">Fullstack Developer</h3>
 
             <p className="delayLargeReveal">
               Meu nome é Iuri Silva, ou “iuricode” (é como me chamam agora)
@@ -50,42 +50,48 @@ export default function About() {
                       src={linkedin}
                       rel="noopener"
                       alt="Ícone do LinkedIn"
-                    /></li
-                  >
+                    />
+                  </li>
                 </a>
 
                 <a
                   href="https://iuricode-blog.vercel.app/"
                   rel="noopener"
                   target="_blank"
-                ><li>
+                >
+                  <li>
                     <img
                       src={laptop}
                       alt="Ícone de um laptop"
-                    /></li
-                  ></a>
+                    />
+                  </li>
+                </a>
 
                 <a
                   href="https://discord.com/invite/QevDJqCzaY"
                   rel="noopener"
                   target="_blank"
-                ><li>
+                >
+                  <li>
                     <img
                       src={discord}
                       alt="Ícone do Discord"
-                    /></li
-                  ></a>
+                    />
+                  </li>
+                </a>
 
                 <a
                   href="https://github.com/iuricode"
                   rel="noopener"
                   target="_blank"
-                ><li>
+                >
+                  <li>
                     <img
                       src={github}
                       alt="Ícone do GitHub"
-                    /></li
-                  ></a>
+                    />
+                  </li>
+                </a>
               </ul>
             </nav>
           </div>
