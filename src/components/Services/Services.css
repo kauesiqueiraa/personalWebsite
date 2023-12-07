@@ -1,0 +1,72 @@
+.services {
+  padding: var(--gap-8) var(--gap-5);
+  background-color: var(--bg-secondary);
+}
+
+.services .container h2 {
+  text-align: center;
+  padding-bottom: var(--gap-3);
+  color: var(--color-white);
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.services .container h2 span {
+  color: var(--color-main);
+}
+
+.services .container #services {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  margin: var(--gap-3) 0px;
+}
+
+.services .container #services article {
+  background-color: var(--bg-main);
+  height: auto;
+  padding: var(--gap-4);
+  margin: var(--gap-1);
+  flex-basis: calc(33% - 20px);
+  flex-grow: 1;
+  border: 1px solid var(--bg-main);
+  transition: 1s all ease;
+  border: 1px solid var(--bg-border);
+  border-radius: 4px;
+}
+
+.services .container #services article div {
+  height: 90px;
+}
+
+.services .container #services article div img {
+  width: 70px;
+}
+
+.services .container #services article h3 {
+  padding: var(--gap-3) 0px;
+  color: var(--color-white);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.services .container #services article p {
+  line-height: 3.2rem;
+  color: var(--color-gray);
+  font-size: 1.8rem;
+}
+
+
+/* Responsive-Desktop  */
+@media screen and (max-width: 1200px) {}
+
+
+/* Responsive-Tablet */
+@media screen and (max-width: 992px) {
+  .services {
+    padding: var(--gap-5) var(--gap-3);
+  }
+}
+
+/* Responsive-Mobile */
+@media screen and (max-width: 768px) {}

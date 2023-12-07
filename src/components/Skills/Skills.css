@@ -1,0 +1,106 @@
+.skills {
+  padding: var(--gap-8) var(--gap-5);
+  background-color: var(--bg-main);
+}
+
+.skills .container #skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  padding: var(--gap-1);
+}
+
+.skills .container #skills div,
+.skills .container #skills article {
+  width: 50%;
+}
+
+.skills .container #skills #skills-text {
+  min-height: 400px;
+}
+
+.skills .container #skills #skills-text h2 {
+  margin-bottom: var(--gap-4);
+  color: var(--color-white);
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.skills .container #skills #skills-text h2 span {
+  color: var(--color-main);
+}
+
+.skills .container #skills #skills-text .changeDescription {
+  transition: 2s all ease;
+}
+
+.skills .container #skills #skills-text p {
+  max-width: 500px;
+  line-height: 3.2rem;
+  color: var(--color-gray);
+  font-size: 1.8rem;
+}
+
+.skills .container #skills #skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-3);
+}
+
+.skills .container #skills #skills-cards article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 20%;
+  flex-grow: 1;
+  height: 130px;
+  background-color: var(--bg-secondary);
+  position: relative;
+  border: 1px solid var(--bg-border);
+  border-radius: 4px;
+  transition: 1s all ease;
+}
+
+.skills .container #skills #skills-cards article:hover {
+  border: 1px solid var(--color-purple);
+}
+
+/* Responsive-Desktop  */
+@media screen and (max-width: 1200px) {
+
+  .skills .container #skills div,
+  .skills .container #skills article {
+    width: 100%;
+  }
+
+  .skills .container #skills #skills-cards {
+    margin-top: var(--gap-5);
+  }
+}
+
+
+/* Responsive-Tablet */
+@media screen and (max-width: 992px) {
+  .skills {
+    padding: var(--gap-5) var(--gap-3);
+  }
+}
+
+/* Responsive-Mobile */
+@media screen and (max-width: 768px) {
+  .skills .container #skills #skills-text {
+    min-height: auto;
+  }
+
+  .skills .container #skills #skills-text .changeDescription {
+    display: none;
+  }
+
+  .skills .container #skills #skills-cards article {
+    width: 40%;
+  }
+}
