@@ -1,67 +1,63 @@
 // import { useState } from "react";
 import "./Experience.css";
 
-export default function Experience(
-  // changeDescription,
-  // titleExperience,
-  // companyExperience,
-  // dateExperience,
-) {
-  // const [currentExperience, setCurrentExperience] = useState({
-  //   changeDescription: '',
-  //   titleExperience: '',
-  //   companyExperience: '',
-  //   dateExperience: '',
-  // });
+import WorksData from "../../data/experiences.json";
+import { useState } from "react";
 
-  // const handleExperienceClick = () => {
-  //   setCurrentExperience({
-  //     changeDescription,
-  //     titleExperience,
-  //     companyExperience,
-  //     dateExperience,
-  //   })
-  // }
+interface Work {
+  company: string;
+  job: string;
+  data: string;
+  subtitle: string;
+  description: string;
+  skills: string
+}
+
+
+export default function Experience() {
+  const [selectedExperience, setSelectedExperience] = useState(WorksData[0]);
+
+  const handleExperienceClick = (work: Work) => {
+    setSelectedExperience(work)
+  }
+
 
   return (
     <section className="experience">
       <div className="container">
         <h2 className="delaySmallReveal">Experiências <span>.</span></h2>
         <div id="experience">
-          <div
-            className="option-experience intervalCardReveal"
-            id="experience-company"
-          // onClick={handleExperienceClick()}
-          >
-            <div className="company digitalhouse activeExperience">
-              <h3>Digital House</h3>
-            </div>
-            <div className="company zuplae">
-              <h3>Zuplae</h3>
-            </div>
-            <div className="company codigoFonteTV">
-              <h3>Código Fonte TV</h3>
-            </div>
+          <div className="option-experience intervalCardReveal">
+
+            {WorksData.map((work, index) => (
+              <div
+                key={index}
+                className={`${work === selectedExperience ? 'activeExperience' : ''}`}
+                onClick={() => handleExperienceClick(work)}
+                id="experience-company"
+              >
+                <h3>{work.company}</h3>
+              </div>
+            ))}
           </div>
 
           <div className="text-experience intervalCardReveal">
             <div>
               <h4 className="titleExperience">
-                Professor conteudista em Frontend
+                {selectedExperience.job}
               </h4>
-              <p className="dateExperience">Nov 2021 - Nov 2022 (1 ano)</p>
+              <p className="dateExperience">{selectedExperience.data}</p>
             </div>
-            <h5 className="companyExperience">Digital House</h5>
+            <h5 className="companyExperience">{selectedExperience.subtitle}</h5>
             <p className="changeExperience">
-              Trabalhei como instrutor conteudista em frontend na Digital
-              House, o trabalho consistia em criar conteúdos para as aulas de
-              especialização frontend. Alguns temas dos conteúdos realizados
-              foram: React, Redux, TypeScript, Testes, GraphQL, Next.js, MUI,
-              React Hook Form e styled-components.
+              {selectedExperience.description}
             </p>
+            <p className="changeExperience two">
+              {selectedExperience.skills}</p>
           </div>
+
         </div>
       </div>
-    </section>
+    </section >
   )
 }

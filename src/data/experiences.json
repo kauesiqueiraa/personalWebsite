@@ -1,0 +1,43 @@
+[
+  {
+    "company": "Sistema de Inspeção",
+    "job": "Desenvolvedor Frontend",
+    "data": "Feb 2023 - Atualmente",
+    "subtitle": "Sistema de Inspeção de Caldeiras",
+    "description": "Trabalho criando o frontend do sistema, integração com as APIs e com buscas no banco, além de criar e gerar relatório de dados, tratar a responsividade para o cliente, e ajudando no backend quando necessário. ",
+    "skills": "React - Typescript - TailwindCSS - Stitches - Next - Github - Docker - Prisma - Node - Express"
+  },
+  {
+    "company": "Iniciativa Dev",
+    "job": "CTO - Desenvolvedor Fullstack",
+    "data": "Jun 2023 - Atualmente",
+    "subtitle": "Iniciativa Dev",
+    "description": "Criamos uma comunidade para ajudar os Desenvolvedores a buscarem oportunidades, criar Network, trabalhar em equipe, etc. Acabo lidando com a parte de interação, ajuda, estruturação da comunidade e conteúdos para aulas e cursos.",
+    "skills": "Comunicação - Arquitetura de Sistemas - Liderança - Solução de Problemas -"
+  },
+  {
+    "company": "Freelancer",
+    "job": "Desenvolvedor Fullstack",
+    "data": "Nov 2022 - Atualmente",
+    "subtitle": "Freelancer",
+    "description": "Trabalho com projetos de Criação de Sites, sistemas e plataformas de acordo com o solicitado pelo cliente, possuo alguns projetos prontos como exemplos, porém ja fiz Landing Pages, Layout de sites, Integração com APIs, Analise de Dados",
+    "skills": "React - Node - Typescript - Javascript - Django - APIs - Clean Code - Deploy - Github"
+  },
+  {
+    "company": "Lar Fabiano",
+    "job": "Instrutor de Informatica e Programação",
+    "data": "Ago 2023 - Nov 2023",
+    "subtitle": "Lar Fabiano",
+    "description": "Foi uma Oficina de Informática, onde ensinei crianças, jovens e Idosos desde a o que é um computador, até a coisas mais complexas, como lógica de Programação, foi um projeto de 4 meses em que consegui passar muito conteúdo além de aprender muito com eles mesmos.",
+    "skills": "Comunicação - Oratória - Didatica - Programação - Lógica de Programação"
+  },
+  {
+    "company": "",
+    "job": "",
+    "data": "",
+    "subtitle": "",
+    "description": "",
+    "skills": ""
+  }
+  
+]

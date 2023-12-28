@@ -1,3 +1,4 @@
+
 import About from "../../components/About/about";
 import Experience from "../../components/Experience/experience";
 import Projects from "../../components/Projects/projects";
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Services />
       <Skills />
+
     </>
   )
 }

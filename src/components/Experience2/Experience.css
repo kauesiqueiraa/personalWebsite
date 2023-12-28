@@ -87,11 +87,6 @@
   font-weight: 400;
 }
 
-.experience .container #experience .text-experience .two {
-  margin-top: 1.5rem;
-  color: var(--color-main)
-}
-
 /* Responsive-Desktop */
 @media screen and (max-width: 1200px) {
   .experience .container #experience {
