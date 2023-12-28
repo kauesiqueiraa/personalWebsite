@@ -1,0 +1,38 @@
+[
+  {
+    "title": "TeslaBank",
+    "description": "Site institucional de banco digital, feito em HTML, Sass e JavaScript.",
+    "skills": "React",
+    "linkUrl": "Visualizar Projeto"
+  },
+  {
+    "title": "Naped",
+    "description": "Site de notícias nerd, feito em Next.js, TypeScript e styled-components.",
+    "skills": "React",
+    "linkUrl": "Visualizar Projeto"
+  },
+  {
+    "title": "eFront",
+    "description": "Página de vendas do eFront, feito em HTML, Sass e JavaScript.",
+    "skills": "React",
+    "linkUrl": "Visualizar Projeto"
+  },
+  {
+    "title": "Steam",
+    "description": "Redesign da Steam, feito em HTML, Sass e JavaScript.",
+    "skills": "React",
+    "linkUrl": "Visualizar Projeto"
+  },
+  {
+    "title": "Em contrução...",
+    "description": "Pegue o café e espere um pouco, estou desenvolvendo o projeto.",
+    "skills": "React",
+    "linkUrl": "Visualizar Projeto"
+  },
+  {
+    "title": "",
+    "description": "",
+    "skills": "",
+    "linkUrl": ""
+  }
+]

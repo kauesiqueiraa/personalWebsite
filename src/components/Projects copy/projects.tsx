@@ -1,29 +1,49 @@
 import "./Projects.css";
 
-export default function Projects() {
+import ProjectsData from "../../data/projects.json";
+
+interface Project {
+  title: string;
+  description: string;
+  skills: string;
+  linkUrl: string;
+}
+
+export default function Projects2() {
+
   return (
     <section className="projects">
       <div className="container">
         <h2 className="delaySmallReveal">Projetos <span>.</span></h2>
         <div id="projects">
-          <article className="intervalCardReveal teslabank">
-            <h3>TeslaBank</h3>
-            <p>
-              Site institucional de banco digital, feito em HTML, Sass e
-              JavaScript.
-            </p>
+          {ProjectsData.map((project: Project, index) => {
+            const articleClass = project.title.toLowerCase().replace(/\s/g, '');
+            const linkClass = `${articleClass}-link`;
 
-            <a
-              href="#"
-              rel="noopener"
-              target="_blank"
-              id="teslabank"
-            >
-              Visualizar Projeto
-            </a>
-          </article>
+            return (
+              <article
+                key={index}
+                className={`intervalCardReveal ${articleClass}`}
+              >
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <p>{project.skills}</p>
 
-          <article className="intervalCardReveal naped">
+                <a
+                  href={project.linkUrl}
+                  rel="noopener"
+                  target="_blank"
+                  id={`${articleClass}-link`}
+                  className={`project-link ${linkClass}`}
+                >
+                  {project.linkUrl}
+                </a>
+              </article>
+            );
+          }
+          )}
+
+          {/* <article className="intervalCardReveal naped">
             <h3>Naped</h3>
             <p>
               Site de notícias nerd, feito em Next.js, TypeScript e
@@ -77,7 +97,7 @@ export default function Projects() {
             <p>
               Pegue o café e espere um pouco, estou desenvolvendo o projeto.
             </p>
-          </article>
+          </article> */}
         </div>
 
         <a

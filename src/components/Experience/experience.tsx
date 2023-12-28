@@ -10,7 +10,7 @@ interface Work {
   data: string;
   subtitle: string;
   description: string;
-  skills: string
+  skills: string;
 }
 
 
